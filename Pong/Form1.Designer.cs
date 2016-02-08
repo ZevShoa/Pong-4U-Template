@@ -46,12 +46,13 @@
             this.startLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.startLabel.BackColor = System.Drawing.Color.Transparent;
             this.startLabel.Font = new System.Drawing.Font("Courier New", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.startLabel.ForeColor = System.Drawing.Color.White;
             this.startLabel.Location = new System.Drawing.Point(158, 175);
             this.startLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.startLabel.Name = "startLabel";
-            this.startLabel.Size = new System.Drawing.Size(615, 143);
+            this.startLabel.Size = new System.Drawing.Size(639, 135);
             this.startLabel.TabIndex = 0;
             this.startLabel.Text = "Press Space To Start";
             this.startLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -59,6 +60,7 @@
             // closeButton
             // 
             this.closeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.closeButton.BackColor = System.Drawing.Color.Transparent;
             this.closeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.closeButton.ForeColor = System.Drawing.Color.White;
             this.closeButton.Location = new System.Drawing.Point(892, -2);
@@ -68,12 +70,13 @@
             this.closeButton.TabIndex = 1;
             this.closeButton.TabStop = false;
             this.closeButton.Text = "x";
-            this.closeButton.UseVisualStyleBackColor = true;
+            this.closeButton.UseVisualStyleBackColor = false;
             this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
             // player1Label
             // 
             this.player1Label.AutoSize = true;
+            this.player1Label.BackColor = System.Drawing.Color.Transparent;
             this.player1Label.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.player1Label.ForeColor = System.Drawing.Color.White;
             this.player1Label.Location = new System.Drawing.Point(42, 3);
@@ -87,9 +90,10 @@
             // 
             this.player2Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.player2Label.AutoSize = true;
+            this.player2Label.BackColor = System.Drawing.Color.Transparent;
             this.player2Label.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.player2Label.ForeColor = System.Drawing.Color.White;
-            this.player2Label.Location = new System.Drawing.Point(645, 3);
+            this.player2Label.Location = new System.Drawing.Point(669, 3);
             this.player2Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.player2Label.Name = "player2Label";
             this.player2Label.Size = new System.Drawing.Size(180, 27);
@@ -100,13 +104,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
+            this.BackColor = System.Drawing.Color.Fuchsia;
+            this.BackgroundImage = global::Pong.Properties.Resources.TrumpHead;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(924, 692);
             this.Controls.Add(this.player2Label);
             this.Controls.Add(this.player1Label);
             this.Controls.Add(this.closeButton);
             this.Controls.Add(this.startLabel);
             this.DoubleBuffered = true;
+            this.ForeColor = System.Drawing.Color.Fuchsia;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
